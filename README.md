@@ -2,7 +2,7 @@
 
 ***A repository for everything Vision Transformers.***
 
-![](readme_images/detr_infer.gif)
+![](example_test_data/detr.png)
 
 ## Currently Supported Models
 
