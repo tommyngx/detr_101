@@ -1,8 +1,8 @@
 # Images and labels direcotry should be relative to train.py
-TRAIN_DIR_IMAGES: '../../object_detection/input/Aquarium Combined.v2-raw-1024.voc/train'
-TRAIN_DIR_LABELS: '../../object_detection/input/Aquarium Combined.v2-raw-1024.voc/train'
-VALID_DIR_IMAGES: '../../object_detection/input/Aquarium Combined.v2-raw-1024.voc/valid'
-VALID_DIR_LABELS: '../../object_detection/input/Aquarium Combined.v2-raw-1024.voc/valid'
+TRAIN_DIR_IMAGES: '/content/data/train'
+TRAIN_DIR_LABELS: '/content/data/train'
+VALID_DIR_IMAGES: '/content/data/valid'
+VALID_DIR_LABELS: '/content/data/valid'
 
 # Class names.
 CLASSES: [
