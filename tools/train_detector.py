@@ -76,7 +76,7 @@ def parse_opt():
     )
     parser.add_argument(
         '-j', '--workers', 
-        default=4,
+        default=2,
         type=int,
         help='number of workers for data processing/transforms/augmentations'
     )
