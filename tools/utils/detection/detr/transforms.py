@@ -25,7 +25,7 @@ def get_train_aug():
             A.MedianBlur(blur_limit=3, p=0.5),
         ], p=0.5),
         A.HorizontalFlip(p=0.5),
-        A.RandomSizedBBoxSafeCrop(width=512, height=512, erosion_rate=0.2, p=0.2),
+        #A.RandomSizedBBoxSafeCrop(width=512, height=512, erosion_rate=0.2, p=0.2),
         A.BBoxSafeRandomCrop(erosion_rate=0.2, p=0.3),
         A.ShiftScaleRotate(p=0.5),
         A.ToGray(p=0.1),
