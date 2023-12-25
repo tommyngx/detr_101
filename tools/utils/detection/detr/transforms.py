@@ -36,7 +36,7 @@ def get_train_aug():
         A.Normalize(max_pixel_value=1),
         ToTensorV2(p=1.0),
     ], bbox_params=A.BboxParams(
-        format='coco', min_area=0, min_visibility=0,label_fields=['labels'])
+        format='pascal_voc', min_area=0, min_visibility=0,label_fields=['labels'])
     )
 
 def get_train_transform():
@@ -44,7 +44,7 @@ def get_train_transform():
         A.Normalize(max_pixel_value=1),
         ToTensorV2(p=1.0),
     ], bbox_params=A.BboxParams(
-        format='coco',min_area=0, min_visibility=0,label_fields=['labels'])
+        format='pascal_voc',min_area=0, min_visibility=0,label_fields=['labels'])
     )
 
 def transform_mosaic(mosaic, boxes, img_size=640):
@@ -82,7 +82,7 @@ def get_valid_transform():
     return A.Compose([
         A.Normalize(max_pixel_value=1),
         ToTensorV2(p=1.0),
-    ], bbox_params=A.BboxParams(format='coco',min_area=0, min_visibility=0,label_fields=['labels']))
+    ], bbox_params=A.BboxParams(format='pascal_voc',min_area=0, min_visibility=0,label_fields=['labels']))
 
 def infer_transforms(image):
     transform = A.Compose([
