@@ -11,7 +11,7 @@ CLASSES: [
 ]
 
 # Number of classes (object classes + 1 for background).
-NC: 8
+NC: 5
 
 # Whether to save the predictions of the validation set while training.
 SAVE_VALID_PREDICTION_IMAGES: True
