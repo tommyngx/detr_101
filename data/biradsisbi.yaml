@@ -7,7 +7,7 @@ VALID_DIR_LABELS: '/home/tommyngu/Data/OsteoLab/Tommy/BreastCancer/Workflow8/Dat
 # Class names.
 CLASSES: [
     '__background__',
-    'Birad2', 'Birad3', 'Birad4', 'Birad5',
+    'BIRADS_2', 'BIRADS_3', 'BIRADS_4', 'BIRADS_5',
 ]
 
 # Number of classes (object classes + 1 for background).
