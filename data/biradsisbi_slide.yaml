@@ -1,0 +1,17 @@
+# Images and labels direcotry should be relative to train.py
+TRAIN_DIR_IMAGES: '/home/tommyngu/Data/OsteoLab/Tommy/BreastCancer/Workflow8/Data/ISBI_DATA/SGM_SLIDE/trainimage'
+TRAIN_DIR_LABELS: '/home/tommyngu/Data/OsteoLab/Tommy/BreastCancer/Workflow8/Data/ISBI_DATA/SGM_SLIDE/voc_birads_trainannot'
+VALID_DIR_IMAGES: '/home/tommyngu/Data/OsteoLab/Tommy/BreastCancer/Workflow8/Data/ISBI_DATA/SGM_SLIDE/testimage'
+VALID_DIR_LABELS: '/home/tommyngu/Data/OsteoLab/Tommy/BreastCancer/Workflow8/Data/ISBI_DATA/SGM_SLIDE/voc_birads_testannot'
+
+# Class names.
+CLASSES: [
+    '__background__',
+    'BIRADS_2', 'BIRADS_3', 'BIRADS_4', 'BIRADS_5',
+]
+
+# Number of classes (object classes + 1 for background).
+NC: 5
+
+# Whether to save the predictions of the validation set while training.
+SAVE_VALID_PREDICTION_IMAGES: True
