@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 import warnings
 
+warnings.filterwarnings("ignore", category=UserWarning)
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
 class DETRModel(nn.Module):
     def __init__(self, num_classes=1, model='detr_resnet50'):
         super(DETRModel, self).__init__()
