@@ -7,7 +7,7 @@ VALID_DIR_LABELS: '/projects/BMammo/Detection/Data/bROI_voc/valid/'
 # Class names.
 CLASSES: [
     '__background__',
-    0,
+    '0',
 ]
 
 #CLASSES: [
