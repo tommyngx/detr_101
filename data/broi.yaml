@@ -5,17 +5,17 @@ VALID_DIR_IMAGES: '/projects/BMammo/Detection/Data/bROI_voc/valid/'
 VALID_DIR_LABELS: '/projects/BMammo/Detection/Data/bROI_voc/valid/'
 
 # Class names.
-#CLASSES: [
-#    '__background__',
-#    'ROI',
-#]
-
 CLASSES: [
-    'ROI'
+    '__background__',
+    '0',
 ]
 
+#CLASSES: [
+#    '0'
+#]
+
 # Number of classes (object classes + 1 for background).
-NC: 1
+NC: 2
 
 # Whether to save the predictions of the validation set while training.
 SAVE_VALID_PREDICTION_IMAGES: True
