@@ -1,0 +1,21 @@
+# Images and labels direcotry should be relative to train.py
+TRAIN_DIR_IMAGES: '/home/tommyngu/Data/OsteoLab/Tommy/BreastCancer/Data/SGM1150/SLIDE_5Le3Bi/trainimage'
+TRAIN_DIR_LABELS: '/home/tommyngu/Data/OsteoLab/Tommy/BreastCancer/Data/SGM1150/SLIDE_5Le3Bi/voc_lesion_birads_trainannot'
+VALID_DIR_IMAGES: '/home/tommyngu/Data/OsteoLab/Tommy/BreastCancer/Data/SGM1150/SLIDE_5Le3Bi/testimage'
+VALID_DIR_LABELS: '/home/tommyngu/Data/OsteoLab/Tommy/BreastCancer/Data/SGM1150/SLIDE_5Le3Bi/voc_lesion_birads_testannot'
+
+# Class names.
+CLASSES: [
+    '__background__',
+    "Architectural_distortion",
+    "Asymmetry",
+    "Lymphnode",
+    "Mass",
+    "Microcalcification",
+]
+
+# Number of classes (object classes + 1 for background).
+NC: 6
+
+# Whether to save the predictions of the validation set while training.
+SAVE_VALID_PREDICTION_IMAGES: True

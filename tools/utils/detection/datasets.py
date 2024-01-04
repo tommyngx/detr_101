@@ -14,7 +14,7 @@ from utils.detection.detr.transforms import (
     get_train_aug,
     transform_mosaic,
 )
-from tqdm.auto import tqdm
+from tqdm import tqdm
 
 # the dataset class
 class DETRDataset(Dataset):
