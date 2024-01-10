@@ -1,0 +1,17 @@
+# Images and labels direcotry should be relative to train.py
+TRAIN_DIR_IMAGES: '/projects/BMammo/Detection/Data/SGM1150/trainimage'
+TRAIN_DIR_LABELS: '/projects/BMammo/Detection/Data/SGM1150/voc_lesion_birads_trainannot1'
+VALID_DIR_IMAGES: '/projects/BMammo/Detection/Data/SGM1150/testimage'
+VALID_DIR_LABELS: '/projects/BMammo/Detection/Data/SGM1150/voc_lesion_birads_testannot1'
+
+# Class names.
+CLASSES: [
+    '__background__',
+    'cancer',
+]
+
+# Number of classes (object classes + 1 for background).
+NC: 2
+
+# Whether to save the predictions of the validation set while training.
+SAVE_VALID_PREDICTION_IMAGES: True
