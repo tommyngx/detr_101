@@ -44,9 +44,8 @@ def get_train_aug():
         format='pascal_voc', min_visibility=100,label_fields=['labels']),
     )
 
-def get_train_transform( img_size=640):
+def get_train_transform():
     return A.Compose([
-        A.Resize(img_size, img_size, always_apply=True, p=1.0),
         A.Normalize(max_pixel_value=1),
         ToTensorV2(p=1.0),
     ], bbox_params=A.BboxParams(
