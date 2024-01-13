@@ -45,10 +45,12 @@ def get_train_aug():
 
 def get_train_transform():
     return A.Compose([
-        A.Normalize(max_pixel_value=1),
+        #A.Normalize(max_pixel_value=1),
         ToTensorV2(p=1.0),
     ], bbox_params=A.BboxParams(
-        format='pascal_voc',min_area=60, min_visibility=60,label_fields=['labels'])
+        #format='pascal_voc',min_area=60, min_visibility=60,label_fields=['labels']),
+        format='pascal_voc', label_fields=['labels'])
+
     )
 
 def transform_mosaic(mosaic, boxes, img_size=640):
