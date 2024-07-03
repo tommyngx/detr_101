@@ -1,18 +1,14 @@
 # Images and labels direcotry should be relative to train.py
-TRAIN_DIR_IMAGES: '/projects/BMammo/Detection/Data/CSAW_1class/detection/train/'
-TRAIN_DIR_LABELS: '/projects/BMammo/Detection/Data/CSAW_1class/detection/train/'
-VALID_DIR_IMAGES: '/projects/BMammo/Detection/Data/CSAW_1class/detection/valid/'
-VALID_DIR_LABELS: '/projects/BMammo/Detection/Data/CSAW_1class/detection/valid/'
+TRAIN_DIR_IMAGES: '/projects/BMammo/Detection/Data/CSAW_1class/detection/train/images'
+TRAIN_DIR_LABELS: '/projects/BMammo/Detection/Data/CSAW_1class/detection/valid/labels'
+VALID_DIR_IMAGES: '/projects/BMammo/Detection/Data/CSAW_1class/detection/train/images'
+VALID_DIR_LABELS: '/projects/BMammo/Detection/Data/CSAW_1class/detection/valid/labels'
 
 # Class names.
 CLASSES: [
     '__background__',
-    '0',
+    'cancer',
 ]
-
-#CLASSES: [
-#    '0'
-#]
 
 # Number of classes (object classes + 1 for background).
 NC: 2
