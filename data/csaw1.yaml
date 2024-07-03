@@ -1,7 +1,7 @@
 # Images and labels direcotry should be relative to train.py
 TRAIN_DIR_IMAGES: '/projects/BMammo/Detection/Data/CSAW_1class/detection/train/images'
-TRAIN_DIR_LABELS: '/projects/BMammo/Detection/Data/CSAW_1class/detection/valid/labels'
-VALID_DIR_IMAGES: '/projects/BMammo/Detection/Data/CSAW_1class/detection/train/images'
+TRAIN_DIR_LABELS: '/projects/BMammo/Detection/Data/CSAW_1class/detection/train/labels'
+VALID_DIR_IMAGES: '/projects/BMammo/Detection/Data/CSAW_1class/detection/valid/images'
 VALID_DIR_LABELS: '/projects/BMammo/Detection/Data/CSAW_1class/detection/valid/labels'
 
 # Class names.
